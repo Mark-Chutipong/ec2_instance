@@ -5,7 +5,8 @@ resource "aws_instance" "default" {
   iam_instance_profile = var.iam_instance_profile
   availability_zone    = var.availability_zone
   subnet_id            = var.subnet_id
-  security_groups      = var.security_groups
+  # security_groups      = var.security_groups
+  vpc_security_group_ids = var.security_groups
   key_name             = var.key_name
   user_data            = var.user_data
   tags                 = var.ec2_tags
