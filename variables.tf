@@ -53,7 +53,7 @@ variable "availability_zone" {
   default = ""
 }
 
-vaiable "subnet_id" {
+variable "subnet_id" {
   type = string
   default = "" 
 }
